@@ -1,0 +1,50 @@
+* {
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+span {
+  font-size: 5rem;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#card {
+  margin-top: 5rem;
+}
+
+#btns button div {
+  width: 2rem;
+  height: 2rem;
+  border-top: solid 2px #333;
+  border-left: solid 2px #333;
+}
+
+#btns button {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+#prev {
+  transform: rotate(-45deg);
+}
+
+#next {
+  transform: rotate(135deg);
+}

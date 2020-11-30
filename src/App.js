@@ -10,19 +10,26 @@ const App = () => {
         <div id="app">
             <h1>Star Wars Movies Order</h1>
             <div id="card">
-              <div id="1">
+              <div id="one">
                 <h2>{film.title}</h2>
               </div>
-              <div id="2">
+              <div id="two">
                 <h3>Order of release:<br/>{ count }</h3>
               </div>
-              <div id="3">
+              <div id="three">
                 <h3>Episode number:<br/>{ film.episode_id }</h3>
               </div>
             </div>
             <div id="btns">
-              <button disabled={ count <= 1 } onClick={() => dispatch(prev())}><div id="prev"></div></button>
-              <button disabled={ count >= 6 } onClick={() => dispatch(next())}><div id="next"></div></button>
+              <button 
+                disabled={ count <= 1 } 
+                onClick={() => dispatch(prev())}
+                id="prev"
+                ></button>
+              <button 
+                disabled={ count >= 6 } 
+                onClick={() => dispatch(next())}
+                id="next"></button>
             </div>
         </div>
     )
